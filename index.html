@@ -691,7 +691,7 @@
       <div class="eyebrow">Professional Summary</div>
       <h2>What I actually build</h2>
       <p class="summary-text">
-        I'm a <strong>Senior Data &amp; AI Engineer with 10+ years of experience</strong> building scalable ML systems and end-to-end AI pipelines across regulated, high-stakes industries — auto lending, pharmaceutical research, public transit, and insurance. My work spans two connected layers: the <strong>data engineering foundation</strong> (ingestion, transformation, warehousing, governance) that every model depends on, and the <strong>ML/GenAI layer</strong> built on top of it — retrieval-augmented generation, multi-agent orchestration, and continuously retrained production models.
+        I'm a <strong>Senior Data &amp; AI Engineer with 10+ years of experience</strong> designing and deploying production-grade data and AI solutions across regulated, high-stakes industries — auto lending, pharmaceutical research, public transit, and insurance. My work spans two connected layers: the <strong>data engineering foundation</strong> (ingestion, transformation, warehousing, governance) that every model depends on, and the <strong>ML/GenAI layer</strong> built on top of it — RAG architectures, multi-agent systems, and continuously retrained production models that automate decision workflows while meeting compliance requirements like HIPAA, GxP, and FDA 21 CFR Part 11.
       </p>
       <p class="summary-text" style="margin-top:16px;">
         Recent work includes production-grade <strong>RAG pipelines on Amazon Bedrock</strong>, <strong>autonomous multi-agent systems</strong> using LangChain and LangGraph, and <strong>continuous retraining pipelines</strong> for large quantitative risk models — cutting manual analysis time by up to 45%. I care about the full lifecycle: from data exploration and feature engineering through CI/CD-enabled production deployment, monitoring, and governance.
@@ -773,6 +773,25 @@
         </div>
       </div>
 
+      <div class="skill-group">
+        <h3>Streaming &amp; Event-Driven Architecture</h3>
+        <div class="chip-row">
+          <span class="chip" data-tag="kafka">Kafka</span>
+          <span class="chip" data-tag="eventhubs">Azure Event Hubs</span>
+          <span class="chip" data-tag="eventbridge">Amazon EventBridge</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Compliance &amp; AI Governance</h3>
+        <div class="chip-row">
+          <span class="chip" data-tag="gxp">GxP Compliance</span>
+          <span class="chip" data-tag="fda">FDA 21 CFR Part 11</span>
+          <span class="chip" data-tag="annex11">EU Annex 11</span>
+          <span class="chip" data-tag="responsibleai">Responsible AI / Explainability</span>
+        </div>
+      </div>
+
       <div class="filter-note" id="filterNote"></div>
     </section>
 
@@ -782,7 +801,7 @@
       <h2>Where this ran in production</h2>
 
       <!-- Project 1: Capital One -->
-      <article class="project-card" data-tech="bedrock rag agentic langchain sagemaker lqm nlp pytorch tensorflow jax mlflow wandb faiss pinecone glue s3 lambda stepfunctions kinesis athena connect databricks snowflake dbt terraform cicd testing guardrails">
+      <article class="project-card" data-tech="bedrock rag agentic langchain sagemaker lqm nlp pytorch tensorflow jax mlflow wandb faiss pinecone glue s3 lambda stepfunctions kinesis athena connect databricks snowflake dbt terraform cicd testing guardrails kafka eventhubs eventbridge responsibleai">
         <div class="project-head">
           <div class="project-title-block">
             <div class="org">Capital One — Auto Finance</div>
@@ -818,18 +837,22 @@
             </div>
             <div class="field">
               <h4>Data Quality &amp; Governance</h4>
-              <p>Bedrock Guardrails enforced for content safety, policy compliance, and hallucination reduction, aligned to HIPAA-adjacent responsible-AI standards; Unity Catalog and Glue Data Catalog for lineage.</p>
+              <p>Bedrock Guardrails enforced for content safety, policy compliance, and hallucination reduction, applying responsible AI and explainability practices aligned with HIPAA-compliant deployment standards; Unity Catalog and Glue Data Catalog for lineage.</p>
+            </div>
+            <div class="field">
+              <h4>Streaming &amp; Event-Driven Architecture</h4>
+              <p>Real-time ingestion via Amazon Kinesis, Kafka, and Azure Event Hubs for loan status updates; EventBridge rules orchestrating events between Amazon Connect and Lambda for AI-driven contact center interactions.</p>
             </div>
             <div class="field">
               <h4>Monitoring &amp; MLOps</h4>
-              <p>MLflow (on Databricks) and Weights &amp; Biases for experiment tracking and model registry; CloudWatch dashboards and alarms for pipeline health; Terraform/CloudFormation for repeatable infra.</p>
+              <p>MLflow on Databricks for experiment tracking and model registry; CloudWatch dashboards and alarms for pipeline health; Terraform/CloudFormation for repeatable infra.</p>
             </div>
           </div>
 
           <div class="impact-strip">
             <span class="impact-pill">↓ 45% manual analyst effort</span>
             <span class="impact-pill">↓ 30% document review time</span>
-            <span class="impact-pill">Real-time decisioning enabled</span>
+            <span class="impact-pill">Real-time, event-driven decisioning</span>
           </div>
 
           <div class="field">
@@ -838,13 +861,13 @@
           </div>
 
           <div class="tech-tags">
-            <span class="tech-tag">SageMaker</span><span class="tech-tag">Bedrock</span><span class="tech-tag">LangChain</span><span class="tech-tag">LangGraph</span><span class="tech-tag">FAISS</span><span class="tech-tag">Pinecone</span><span class="tech-tag">Kinesis</span><span class="tech-tag">Lambda</span><span class="tech-tag">API Gateway</span><span class="tech-tag">Databricks</span><span class="tech-tag">MLflow</span><span class="tech-tag">W&amp;B</span><span class="tech-tag">Snowflake</span><span class="tech-tag">dbt</span><span class="tech-tag">Terraform</span><span class="tech-tag">Amazon Connect / Lex</span>
+            <span class="tech-tag">SageMaker</span><span class="tech-tag">Bedrock</span><span class="tech-tag">LangChain</span><span class="tech-tag">LangGraph</span><span class="tech-tag">FAISS</span><span class="tech-tag">Pinecone</span><span class="tech-tag">Kinesis</span><span class="tech-tag">Kafka</span><span class="tech-tag">Azure Event Hubs</span><span class="tech-tag">EventBridge</span><span class="tech-tag">Lambda</span><span class="tech-tag">API Gateway</span><span class="tech-tag">Databricks</span><span class="tech-tag">MLflow</span><span class="tech-tag">Snowflake</span><span class="tech-tag">dbt</span><span class="tech-tag">Terraform</span><span class="tech-tag">Amazon Connect / Lex</span>
           </div>
         </div></div>
       </article>
 
       <!-- Project 2: Merck -->
-      <article class="project-card" data-tech="rag langchain nlp faiss pinecone opensearch lambda stepfunctions databricks snowflake informatica terraform s3">
+      <article class="project-card" data-tech="rag langchain nlp faiss pinecone opensearch lambda stepfunctions databricks snowflake informatica terraform s3 gxp fda annex11">
         <div class="project-head">
           <div class="project-title-block">
             <div class="org">Merck — Pharmaceutical Research</div>
@@ -857,11 +880,11 @@
           <div class="field-grid">
             <div class="field">
               <h4>Business Problem</h4>
-              <p>Researchers needed faster, more relevant answers from a large, fast-growing body of scientific literature, without manually searching disparate document stores.</p>
+              <p>Researchers needed faster, more relevant answers from a large, fast-growing body of scientific literature, without manually searching disparate document stores — all while meeting pharmaceutical industry compliance requirements.</p>
             </div>
             <div class="field">
               <h4>Solution Overview</h4>
-              <p>Designed LLM-powered document retrieval workflows using LangChain prompt chaining and Bedrock APIs, backed by vector search across Pinecone and FAISS, with an S3-based data lake and OpenSearch semantic search layer.</p>
+              <p>Designed GxP-compliant LLM-powered document retrieval workflows using LangChain prompt chaining and Bedrock APIs, in adherence with FDA 21 CFR Part 11 and EU Annex 11, backed by vector search across Pinecone and FAISS, with an S3-based data lake and OpenSearch semantic search layer.</p>
             </div>
             <div class="field">
               <h4>Source &amp; Target Systems</h4>
@@ -886,6 +909,10 @@
               <h4>Cost &amp; Ops Optimization</h4>
               <p>Terraform-managed Databricks cluster provisioning with auto-scaling and termination policies to control cloud compute spend; Informatica IDMC used for secure on-prem-to-cloud migration.</p>
             </div>
+            <div class="field">
+              <h4>Regulatory Compliance</h4>
+              <p>Workflows built and audited in adherence with GxP, FDA 21 CFR Part 11, and EU Annex 11 requirements for pharmaceutical research data and AI-assisted decision support.</p>
+            </div>
           </div>
 
           <div class="impact-strip">
@@ -895,7 +922,7 @@
           </div>
 
           <div class="tech-tags">
-            <span class="tech-tag">LangChain</span><span class="tech-tag">Bedrock</span><span class="tech-tag">Pinecone</span><span class="tech-tag">FAISS</span><span class="tech-tag">OpenSearch</span><span class="tech-tag">Lambda</span><span class="tech-tag">Step Functions</span><span class="tech-tag">Databricks</span><span class="tech-tag">Snowflake</span><span class="tech-tag">Informatica IDMC</span><span class="tech-tag">Terraform</span>
+            <span class="tech-tag">LangChain</span><span class="tech-tag">Bedrock</span><span class="tech-tag">Pinecone</span><span class="tech-tag">FAISS</span><span class="tech-tag">OpenSearch</span><span class="tech-tag">Lambda</span><span class="tech-tag">Step Functions</span><span class="tech-tag">Databricks</span><span class="tech-tag">Snowflake</span><span class="tech-tag">Informatica IDMC</span><span class="tech-tag">Terraform</span><span class="tech-tag">FDA 21 CFR Part 11</span><span class="tech-tag">EU Annex 11</span>
           </div>
         </div></div>
       </article>
@@ -1228,10 +1255,10 @@
       <h2>Full resume</h2>
       <div class="resume-box">
         <div>
-          <h3 style="font-size:1rem; margin-bottom:6px;">Download the complete resume (PDF)</h3>
-          <p style="font-size:0.85rem; color:var(--text-muted);">Replace this link with a hosted copy of your resume file once the site is deployed.</p>
+          <h3 style="font-size:1rem; margin-bottom:6px;">For recruiters &amp; hiring managers</h3>
+          <p style="font-size:0.85rem; color:var(--text-muted); max-width:48ch;">Download the complete resume (PDF) for full role history, education, and detailed responsibilities not covered above.</p>
         </div>
-        <a href="#" class="btn btn-primary" id="resumeBtn">Download Resume ↓</a>
+        <a href="./Mamatha-Velturi-Resume.pdf" class="btn btn-primary" id="resumeBtn" download>Download Resume ↓</a>
       </div>
     </section>
 
@@ -1316,12 +1343,6 @@
       chip.classList.toggle('active');
       applyFilter();
     });
-  });
-
-  // Resume button placeholder behavior
-  document.getElementById('resumeBtn').addEventListener('click', (e) => {
-    e.preventDefault();
-    alert('Add a link to your hosted resume PDF here (e.g. a Google Drive share link or a file hosted alongside this site).');
   });
 </script>
 
